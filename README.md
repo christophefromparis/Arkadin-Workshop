@@ -1,14 +1,22 @@
-# Arkadin-Workshop
+# Arkadin Apigee Workshop
 
-Create your Apigee account: https://login.apigee.com/sign_up
+## General presentation
 
---- An API proxy from SOAP service ---
+### Google Apigee Edge
+
+### Arkadin architecture
+
+## Practice Apigee
+
+### Create your Apigee account: https://login.apigee.com/sign_up
+
+### An API proxy from SOAP service
 
 SOAP service for testing:
 http://www.webservicex.com/New/Home/ServiceDetail/56
 http://www.webservicex.com/globalweather.asmx?wsdl
 
---- An API proxy from specification ---
+### An API proxy from specification
 
 The Arkadin specifications: https://app.swaggerhub.com/search?query=%20arkadin
 
@@ -18,6 +26,6 @@ https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/s
 Test an Rest API: 
 https://jsonplaceholder.typicode.com/
 
---- An API proxy with Node.js ---
+### An API proxy with Node.js
 
 Node.js tutorial: https://www.w3schools.com/nodejs/
