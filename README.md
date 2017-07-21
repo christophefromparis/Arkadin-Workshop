@@ -53,10 +53,15 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 
 :muscle: It's time to exercise...
 
-#### Add a quota limit ![alt text](./images/QuotaPolicy.JPG)
+#### Add a quota limit
+![alt text](./images/QuotaPolicy.JPG)
+
 #### Create a specific endpoint (for the URL /users)
-#### Add a JSON-To-XML policy ![alt text](./images/XmlPolicy.JPG)
-##### Add a condition on policy 
+
+#### Add a JSON-To-XML policy (or a XML-To-JSON :smiling_imp:)
+![alt text](./images/XmlPolicy.JPG)
+
+##### Add a condition on policy :trollface:
 
 :muscle: It's time to exercise...
 
