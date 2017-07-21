@@ -9,6 +9,10 @@
 ## Practice Apigee
 
 ### Create your Apigee account: https://login.apigee.com/sign_up
+It's now or never!
+
+### Create your API specification
+By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.io/#/)
 
 ### Create an API proxy from SOAP service
 
