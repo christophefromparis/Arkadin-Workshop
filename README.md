@@ -1,5 +1,7 @@
 # Arkadin Apigee Workshop
 
+![alt text](./images/Arkadin.JPG)
+
 ## General presentation
 
 ### Google Apigee Edge
@@ -46,6 +48,9 @@ Node.js tutorial: https://www.w3schools.com/nodejs/
 See the version.js file
 
 ## Arkadin feedbacks
+
+![alt text](./images/IloveAPI.JPG)
+
 ### Specification
 ### Mock
 ### Development
