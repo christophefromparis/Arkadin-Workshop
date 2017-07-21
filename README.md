@@ -53,14 +53,14 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 
 :muscle: It's time to exercise...
 
-#### Add a quota limit
+#### Add a quota limit ![alt text](./images/QuotaPolicy.JPG)
 #### Create a specific endpoint (for the URL /users)
-#### Add a JSON-To-XML policy
-##### Add a condition on policy
+#### Add a JSON-To-XML policy ![alt text](./images/XmlPolicy.JPG)
+##### Add a condition on policy 
 
 :muscle: It's time to exercise...
 
-#### Add a apikey verification
+#### Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
 In order to use the apikey, explain the publish process (developers, app, product and key).
 
 Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:)
