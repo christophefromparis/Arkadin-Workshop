@@ -32,10 +32,12 @@ Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsi
 
 ### Create an API proxy from SOAP service
 
-SOAP service for testing: http://www.webservicex.com/New/Home/ServiceDetail/56
-The WSDL: http://www.webservicex.com/globalweather.asmx?wsdl
+We're going to retrieve the weather for your city by using the following SOAP service http://www.webservicex.com/New/Home/ServiceDetail/56
+
+Firsly, I'm going to show you :tv: how to do that and secondly it's your turn :white_check_mark:
 
 :muscle: It's time to exercise...
+Create an API proxy (SOAP service) with the WSDL URL http://www.webservicex.com/globalweather.asmx?wsdl and test the API with Postman (or your favorite tool).
 
 ### Create an API proxy from specification
 
