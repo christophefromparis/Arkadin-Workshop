@@ -4,22 +4,22 @@
 
 ## General presentation
 
-### Google Apigee Edge
+### Google Apigee Edge (:hourglass: 5')
 
 ![alt text](./images/ApigeeOverview.JPG)
 
 ![alt text](./images/ApigeeOverview2.JPG)
 
-### Arkadin architecture
+### Arkadin architecture (:hourglass: 5')
 
 The [plateform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments%2FArkadin-SolutionArchitecture-20170406-v0%2E1%2Epng&parent=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments)
 
-## Practice Apigee
+## Practice Apigee (:hourglass: 85')
 
-### Create your Apigee account: https://login.apigee.com/sign_up
+### Create your Apigee account: https://login.apigee.com/sign_up (:hourglass: 5')
 It's now or never:heavy_exclamation_mark:
 
-### Create your API specification
+### Create your API specification (:hourglass: 15')
 ![alt text](./images/OpenAPI.JPG)
 
 The [Open API Initiative](https://www.openapis.org/). In 2015 Open API specification = Swagger 2.0 specification.
@@ -30,7 +30,7 @@ By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.i
 Write your specification by using your favorite tool. The specification must describes a new operation called /subsidiaries/countryCode.
 Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsidiaries-0.9-swagger.json)
 
-### Create an API proxy from SOAP service
+### Create an API proxy from SOAP service (:hourglass: 15')
 
 We're going to retrieve the weather for your city by using the following SOAP service http://www.webservicex.com/New/Home/ServiceDetail/56
 
@@ -39,7 +39,7 @@ Firsly, I'm going to show you :tv: how to do that and secondly it's your turn :w
 :muscle: It's time to exercise...
 Create an API proxy (SOAP service) with the WSDL URL http://www.webservicex.com/globalweather.asmx?wsdl and test the API with Postman (or your favorite tool).
 
-### Create an API proxy from specification
+### Create an API proxy from specification (:hourglass: 5')
 
 The [Arkadin specifications](https://app.swaggerhub.com/search?query=%20arkadin)
 
@@ -47,7 +47,7 @@ The [JSON specification for the Subsidiaries API](https://app.swaggerhub.com/api
 
 :muscle: It's time to exercise...
 
-### Create an REST API proxy 
+### Create an REST API proxy (:hourglass: 35')
 
 Use the Rest API: https://jsonplaceholder.typicode.com/
 
@@ -68,7 +68,7 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 #### Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
 In order to use the apikey, explain the publish process (developers, app, product and key).
 
-Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:)
+Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:) (:hourglass: 3')
 
 ![alt text](./images/ApigeeProduct.JPG)
 
@@ -78,17 +78,18 @@ Please, show me the [video](https://vimeo.com/113342105) (and listen the beautif
 
 :muscle: It's time to exercise...
 
-### Add an API proxy with Node.js
+### Add an API proxy with Node.js (:hourglass: 10')
 
 Node.js tutorial: https://www.w3schools.com/nodejs/
 See the version.js file
 
 :muscle: It's time to exercise...
 
-## Arkadin feedbacks
+## Arkadin feedbacks (:hourglass: 15')
 
 ![alt text](./images/IloveAPI.JPG)
 
+### Demonstration of the Arkadin APIs:
 1. Customers API (production)
 2. Subsidiaries API (production)
 3. Events API (prototype at the moment, production on September)
@@ -118,4 +119,4 @@ Several environments :thumbsup:, easy to configure. Load balancing.
 #### Reports
 To explore in details
 
-
+## Questions:question: (:hourglass: 10')
