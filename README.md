@@ -90,8 +90,8 @@ See the version.js file
 ![alt text](./images/IloveAPI.JPG)
 
 ### Demonstration of the Arkadin APIs:
-1. Customers API (production)
-2. Subsidiaries API (production)
+1. Customers API (production from today)
+2. Subsidiaries API (production from )
 3. Events API (prototype at the moment, production on September)
 
 ### Specification
