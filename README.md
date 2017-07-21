@@ -38,7 +38,7 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 #### Add a apikey verification
 In order to use the apikey, explain the publish process (developers, app, product and key)
 
-
+![alt text](./images/ApigeeProduct.JPG)
 
 ### Add an API proxy with Node.js
 
