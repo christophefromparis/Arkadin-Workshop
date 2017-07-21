@@ -78,6 +78,10 @@ See the version.js file
 
 ![alt text](./images/IloveAPI.JPG)
 
+1. Customers API (production)
+2. Subsidiaries API (production)
+3. Events API (prototype at the moment, production on September)
+
 ### Specification
 OpenAPI and Swagger, Apigee isn't enought strong (or not enought finish, as you prefer).
 
@@ -95,9 +99,12 @@ I have to draw up a best practices document for my succesors :blue_book:
 ##### Postman, Postman and Postman :thumbsup:
 ##### Collection runner on Postman 
 Postman collection runner to automatize tests
+But how test the API availability in production:question:
 
 ### Production
-Several environments :thumbsup:
+Several environments :thumbsup:, easy to configure. Load balancing.
 
 #### Reports
-To explore in details 
+To explore in details
+
+
