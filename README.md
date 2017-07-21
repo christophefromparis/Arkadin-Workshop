@@ -22,9 +22,13 @@ It's now or never:heavy_exclamation_mark:
 ### Create your API specification
 ![alt text](./images/OpenAPI.JPG)
 
+The [Open API Initiative](https://www.openapis.org/). In 2015 Open API specification = Swagger 2.0 specification.
+
 By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.io/#/)
 
 :muscle: It's time to exercise...
+Write your specification by using your favorite tool. The specification must describes a new operation called /subsidiaries/countryCode.
+Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsidiaries-0.9-swagger.json)
 
 ### Create an API proxy from SOAP service
 
