@@ -15,10 +15,11 @@ The Arkadin specifications: https://app.swaggerhub.com/search?query=%20arkadin
 The JSON specification for the Subsidiaries API:
 https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/swagger.json
 
-The target endpoint
-https://api-dev.arkadin.com/v1/subsidiaries
+Test an Rest API: 
+https://jsonplaceholder.typicode.com/
 
 --- An API proxy with Node.js ---
 
+Node.js tutorial: https://www.w3schools.com/nodejs/
 
-
+Example Node.js code:
