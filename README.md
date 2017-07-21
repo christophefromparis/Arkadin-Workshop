@@ -17,7 +17,7 @@ The [plateform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin
 ## Practice Apigee
 
 ### Create your Apigee account: https://login.apigee.com/sign_up
-It's now or never!
+It's now or never:grey_exclamation:
 
 ### Create your API specification
 ![alt text](./images/OpenAPI.JPG)
