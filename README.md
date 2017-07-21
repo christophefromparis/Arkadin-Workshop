@@ -33,7 +33,7 @@ The WSDL: http://www.webservicex.com/globalweather.asmx?wsdl
 
 The [Arkadin specifications](https://app.swaggerhub.com/search?query=%20arkadin)
 
-The [JSON specification for the Subsidiaries] API(https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/swagger.json)
+The [JSON specification for the Subsidiaries API](https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/swagger.json)
 
 ### Create an REST API proxy 
 
