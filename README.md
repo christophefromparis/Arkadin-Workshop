@@ -38,7 +38,14 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 #### Add a JSON-To-XML policy
 ##### Add a condition on policy
 #### Add a apikey verification
-In order to use the apikey, explain the publish process (developers, app, product and key)
+In order to use the apikey, explain the publish process (developers, app, product and key).
+
+Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:)
+
+
+##### Create a product
+##### Register developers
+##### Register apps
 
 ![alt text](./images/ApigeeProduct.JPG)
 
