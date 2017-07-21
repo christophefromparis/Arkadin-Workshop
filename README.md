@@ -79,10 +79,25 @@ See the version.js file
 ![alt text](./images/IloveAPI.JPG)
 
 ### Specification
+OpenAPI and Swagger, Apigee isn't enought strong (or not enought finish, as you prefer).
+
 ### Mock
+Used and approved by Arkadin :thumbsup:
+
 ### Development
-##### Postman, Postman and Postman
+Easy to use
+Easy to understand
+Easy to version
+You have to know policies and how retrieve the documentation about parameters (because there's a lot of parameters)
+I have to draw up a best practices document for my succesors :blue_book:
+
 ### Test
-##### Collection runner on Postman
+##### Postman, Postman and Postman :thumbsup:
+##### Collection runner on Postman 
+Postman collection runner to automatize tests
+
 ### Production
+Several environments :thumbsup:
+
 #### Reports
+To explore in details 
