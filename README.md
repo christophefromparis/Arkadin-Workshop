@@ -2,6 +2,8 @@
 
 ![alt text](./images/Arkadin.JPG)
 
+## Quick roundtable (:hourglass: 5')
+
 ## General presentation
 
 ### Google Apigee Edge (:hourglass: 5')
@@ -14,7 +16,7 @@
 
 The [plateform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments%2FArkadin-SolutionArchitecture-20170406-v0%2E1%2Epng&parent=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments)
 
-## Practice Apigee (:hourglass: 85')
+## Practice Apigee (:hourglass: 80')
 
 ### Create your Apigee account: https://login.apigee.com/sign_up (:hourglass: 5')
 It's now or never:heavy_exclamation_mark:
@@ -27,7 +29,7 @@ The [Open API Initiative](https://www.openapis.org/). In 2015 Open API specifica
 By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.io/#/)
 
 :muscle: It's time to exercise...
-Write your specification by using your favorite tool. The specification must describes a new operation called /subsidiaries/countryCode.
+Write your specification by using your favorite tool (either Apigee or Swagger or another else). The specification must describes a new operation called /subsidiaries/countryCode.
 Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsidiaries-0.9-swagger.json)
 
 ### Create an API proxy from SOAP service (:hourglass: 15')
@@ -41,17 +43,23 @@ Create an API proxy (SOAP service) with the WSDL URL http://www.webservicex.com/
 
 ### Create an API proxy from specification (:hourglass: 5')
 
-The [Arkadin specifications](https://app.swaggerhub.com/search?query=%20arkadin)
+You can retrieve the [Arkadin specifications here](https://app.swaggerhub.com/search?query=%20arkadin)
 
 The [JSON specification for the Subsidiaries API](https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/swagger.json)
 
 :muscle: It's time to exercise...
+Create the Subsidiaries API proxy from the specification.
 
-### Create an REST API proxy (:hourglass: 35')
+### Create an REST API proxy (:hourglass: 30')
 
 Use the Rest API: https://jsonplaceholder.typicode.com/
 
 :muscle: It's time to exercise...
+1. Create a reverse proxy
+- existing API URL = https://jsonplaceholder.typicode.com/
+- secure access = pass through (at the moment) 
+2. Test the API
+- By using a trace session
 
 #### Add a quota limit
 ![alt text](./images/QuotaPolicy.JPG)
