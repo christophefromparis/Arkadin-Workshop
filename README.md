@@ -60,18 +60,12 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 - secure access = pass through (at the moment) 
 2. Test the API
 - By using a trace session
-
-#### Add a quota limit
+3. Add a quota limit policy (the source describing the policy is in [the src directory](./src))
 ![alt text](./images/QuotaPolicy.JPG)
-
-#### Create a specific endpoint (for the URL /users)
-
-#### Add a JSON-To-XML policy (or a XML-To-JSON :smiling_imp:)
+4. Create a specific proxy endpoint (for the URL /users and the HTTP verb GET)
+5. Add a JSON-To-XML policy (or a XML-To-JSON :smiling_imp:) to convert the response format in XML
 ![alt text](./images/XmlPolicy.JPG)
-
-##### Add a condition on policy :trollface:
-
-:muscle: It's time to exercise...
+6. Add a condition on policy :trollface: We want to convert the response format (XML or JSON) depending the header request 'Content'
 
 #### Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
 In order to use the apikey, explain the publish process (developers, app, product and key).
