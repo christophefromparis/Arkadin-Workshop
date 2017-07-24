@@ -1,0 +1,4 @@
+<RouteRule name="version">
+     <Condition>proxy.pathsuffix MatchesPath "/version"</Condition>
+     <TargetEndpoint>VersionTargetEndpointVersion</TargetEndpoint>
+</RouteRule>
