@@ -2,7 +2,7 @@ var http = require('http');
 
 console.log('Version.js application starting...');
 
-var respVersion = "Arkadin Customers API v0.5";
+var respVersion = "Arkadin Workshop API v1";
 
 var svr = http.createServer(function(req, resp) { resp.setHeader('Content-Type', 'application/xml'); resp.end(respVersion); });
 
