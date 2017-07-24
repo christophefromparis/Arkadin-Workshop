@@ -65,9 +65,8 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 4. Create a specific proxy endpoint (for the URL /users and the HTTP verb GET)
 5. Add a JSON-To-XML policy (or a XML-To-JSON :smiling_imp:) to convert the response format in XML
 ![alt text](./images/XmlPolicy.JPG)
-6. Add a condition on policy :trollface: We want to convert the response format (XML or JSON) depending the header request 'Content'
-
-#### Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
+6. Add a condition on policy :trollface: We want to convert the response format (XML or JSON) depending the request header 'Accept'
+7. Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
 In order to use the apikey, explain the publish process (developers, app, product and key).
 
 Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:) (:hourglass: 3')
