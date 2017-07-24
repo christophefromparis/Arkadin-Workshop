@@ -29,7 +29,7 @@ The [Open API Initiative](https://www.openapis.org/). In 2015 Open API specifica
 By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.io/#/)
 
 :muscle: It's time to exercise...
-Write your specification by using your favorite tool (either Apigee or Swagger or another else). The specification must describes a new operation called /subsidiaries/countryCode.
+Write your specification by using your favorite tool (either Apigee or Swagger or another else). The specification must describes a new operation called /subsidiaries/countryCode. This service have to return a list of subsidiaries given a country code (Use the description of others services to describe it).
 Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsidiaries-0.9-swagger.json)
 
 ### Create an API proxy from SOAP service (:hourglass: 15')
@@ -115,7 +115,7 @@ Used and approved by Arkadin :thumbsup:
 Easy to use
 Easy to understand
 Easy to version
-You have to know policies and how retrieve the documentation about parameters (because there's a lot of parameters)
+You have to know policies and how retrieve the documentation about parameters (because there're a lot of parameters)
 I have to draw up a best practices document for my succesors :blue_book:
 
 ### Test
