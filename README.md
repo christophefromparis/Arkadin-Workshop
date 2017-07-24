@@ -78,6 +78,12 @@ Please, show me the [video](https://vimeo.com/113342105) (and listen the beautif
 ##### Register apps
 
 :muscle: It's time to exercise...
+Ok, I'm a developer, from a partner, and you want to give me an access to your API. My email is c.cosnefroy@arkadin.com and I'm waiting your email with the information needed to use your API.
+So, you have to publish your API and give me the elements in order to test the API.
+
+Depending on time we can also:
+Add a cache
+Add a new proxy endpoint to reset the quota
 
 ### Add an API proxy with Node.js (:hourglass: 10')
 
@@ -85,6 +91,10 @@ Node.js tutorial: https://www.w3schools.com/nodejs/
 See the version.js file
 
 :muscle: It's time to exercise...
+1. Add a new proxy endpoint nammed getVersion (URL /version and HTTP verb GET)
+2. Create a new script (Node.js) and copy the version.js file
+3. Create a new target endpoint using the Node.js
+4. Add a routeRule to redirect the calls to the good endpoind (use the RouteRule snippet in [the src directory](./src))
 
 ## Arkadin feedbacks (:hourglass: 15')
 
