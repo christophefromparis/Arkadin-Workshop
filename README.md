@@ -150,6 +150,4 @@ The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_
 
 ## Arkadin feedbacks (:hourglass: 15')
 
-![alt text](./images/IloveAPI.JPG)
-
 ## Questions:question: (:hourglass: 10')
