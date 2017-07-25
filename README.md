@@ -131,3 +131,25 @@ Several environments :thumbsup:, easy to configure. Load balancing.
 To explore in details
 
 ## Questions:question: (:hourglass: 10')
+
+# Arkadin Talend Workshop
+
+![alt text](./images/Arkadin.JPG)
+
+## Quick roundtable (:hourglass: 5')
+
+## General presentation
+
+### Talend Data Services (:hourglass: 5')
+
+### Arkadin architecture (:hourglass: 5')
+
+The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments%2FArkadin-SolutionArchitecture-20170406-v0%2E1%2Epng&parent=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments)
+
+## Practice Talend Data Services (:hourglass: 80')
+
+## Arkadin feedbacks (:hourglass: 15')
+
+![alt text](./images/IloveAPI.JPG)
+
+## Questions:question: (:hourglass: 10')
