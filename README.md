@@ -140,19 +140,42 @@ To explore in details
 
 ## General presentation
 
-### Talend Data Services (:hourglass: 5')
+### Talend Data Services Platform (:hourglass: 5')
 
-Jobs, services and routes
+![alt text](./images/TDSPLogo.png)
+
+
+
+#### Jobs, services and routes
+
+#### Connectors
 
 ### Arkadin architecture (:hourglass: 5')
 
 The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments%2FArkadin-SolutionArchitecture-20170406-v0%2E1%2Epng&parent=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments)
 
-## Practice Talend Data Services (:hourglass: 80')
+## Practice Talend Data Services Platform (:hourglass: 80')
+
+### Create a job
+We're going to create a job with several components in order to glimpse the possibilities of Talend.
+This job should:
+1. take a XML file with invoice data and billing account,
+2. Retrieve the subsidiaries given the billing account
+3. Filter the invoices 
+4. Sort the invoices
+5. Create a case in Salesforce with the invoice data included
+
+
+
+### Create a Rest service
+
+
 
 ## Arkadin feedbacks (:hourglass: 15')
 
 ## Questions:question: (:hourglass: 10')
 
 1. How to deploy a service?
+2. How to plan a job?
+3. 
 
