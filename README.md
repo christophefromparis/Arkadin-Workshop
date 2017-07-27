@@ -152,11 +152,11 @@ To explore in details
 
 ##### Services
 
-![alt text](./images/routes.png)
+![alt text](./images/service.png)
 
 ##### Routes
 
-![alt text](./images/service.png)
+![alt text](./images/route.png)
 
 #### Connectors
 
@@ -170,10 +170,24 @@ The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_
 We're going to create a job with several components in order to glimpse the possibilities of Talend.
 This job should:
 1. take a XML file with invoice data and billing account,
+- Import the XML file in the metadata part.
+- Create a new job
+- Insert a tFileInputXML, retrieve the description from the metadata
 2. Retrieve the subsidiaries given the billing account
-3. Filter the invoices 
+- Create a MS SQL Server connection in the metadata part
+- Insert a tPrejob
+- Insert a tMSSqlConnection, retrieve the description from the metadata
+- Insert a tPostjob
+- Insert a tMSSqlClose
+- Insert a tMSSqlInput to retrieve the billing account
+- Test now!
+- Insert a tMap
+3. Filter the invoices
+- Insert a tFilterRow
 4. Sort the invoices
+- Insert a tSortRows
 5. Create a case in Salesforce with the invoice data included
+- Create a Salesforce connection in the metadata part
 
 
 
