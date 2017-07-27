@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices>
+    <invoice id="10">
+        <accountNumber>FR10021259</accountNumber>
+        <invoiceAmount>1267.89</invoiceAmount>
+        <invoiceDate>2017-06-31</invoiceDate>
+    </invoice>
+    <invoice id="11">
+        <accountNumber>BA1415155</accountNumber>
+        <invoiceAmount>12.78</invoiceAmount>
+        <invoiceDate>2017-12-30</invoiceDate>
+    </invoice>
+    <invoice id="12">
+        <accountNumber>BA1199246</accountNumber>
+        <invoiceAmount>678.8</invoiceAmount>
+        <invoiceDate>2016-12-29</invoiceDate>
+    </invoice>
+    <invoice id="14">
+        <accountNumber>FR10021259</accountNumber>
+        <invoiceAmount>12.89</invoiceAmount>
+        <invoiceDate>2017-06-31</invoiceDate>
+    </invoice>
+    <invoice id="15">
+        <accountNumber>BA1415155</accountNumber>
+        <invoiceAmount>120.78</invoiceAmount>
+        <invoiceDate>2017-12-30</invoiceDate>
+    </invoice>
+    <invoice id="16">
+        <accountNumber>BA1199246</accountNumber>
+        <invoiceAmount>6708.8</invoiceAmount>
+        <invoiceDate>2016-12-29</invoiceDate>
+    </invoice>
+</invoices>
