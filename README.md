@@ -134,7 +134,7 @@ To explore in details
 
 # Arkadin Talend Workshop
 
-![alt text](./images/Arkadin.JPG)
+![alt text](./images/TalendWorkshop.png)
 
 ## Quick roundtable (:hourglass: 5')
 
