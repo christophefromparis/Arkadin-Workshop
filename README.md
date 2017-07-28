@@ -189,17 +189,15 @@ This job should:
 5. Create a case in Salesforce with the invoice data included
 - Create a Salesforce connection in the metadata part
 
+### Create the simpliest Rest service
+1. Insert a tRESTRequest
+2. Insert a tXMLMap
+3. Insert a tRESTResponse
 
+### And if I want to deploy my work?
 
-### Create a Rest service
-
-
-
-## Arkadin feedbacks (:hourglass: 15')
+#### Publish, deploy and start
 
 ## Questions:question: (:hourglass: 10')
 
-1. How to deploy a service?
-2. How to plan a job?
-3. 
 
