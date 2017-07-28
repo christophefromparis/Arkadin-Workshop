@@ -177,7 +177,7 @@ How to create this job:
 - Create a new job
 - Insert a tFileInputXML, retrieve the description from the metadata
 2. Retrieve the subsidiaries given the billing account
-- Create a MS SQL Server connection in the metadata part
+- Create a MS SQL Server connection in the metadata part (Microsoft SQL Server - Microsoft - workshop - frpa2devtal01.arkadin.lan - 59272 - workshop)
 - Insert a tPrejob
 - Insert a tMSSqlConnection, retrieve the description from the metadata
 - Insert a tPostjob
@@ -185,9 +185,9 @@ How to create this job:
 - Insert a tMSSqlInput to retrieve the billing account
 - Test now!
 - Insert a tMap
-3. Filter the invoices
+3. Filter the invoices (Reject the invoices with an amount < 100)
 - Insert a tFilterRow
-4. Sort the invoices
+4. Sort the invoices (Sort by date)
 - Insert a tSortRows
 
 ![alt text](./images/FirstJob.PNG)
