@@ -187,10 +187,18 @@ This job should:
 4. Sort the invoices
 - Insert a tSortRows
 
+![alt text](./images/FirstJob.PNG)
+
 ### Create the simpliest Rest service
 1. Insert a tRESTRequest
 2. Insert a tXMLMap
 3. Insert a tRESTResponse
+
+![alt text](./images/SimpleRequest.PNG)
+
+### A service a little bit more elaborated
+
+![alt text](./images/SecondService.PNG)
 
 ### And if I want to deploy my work?
 
