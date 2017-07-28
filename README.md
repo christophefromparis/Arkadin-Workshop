@@ -136,8 +136,6 @@ To explore in details
 
 ![alt text](./images/TalendWorkshop.png)
 
-## Quick roundtable (:hourglass: 5')
-
 ## General presentation
 
 ### Talend Data Services Platform (:hourglass: 5')
