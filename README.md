@@ -156,7 +156,7 @@ To explore in details
 
 ##### Routes
 
-![alt text](./images/route.png)
+![alt text](./images/routes.png)
 
 #### Connectors
 
