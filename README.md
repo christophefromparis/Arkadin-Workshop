@@ -186,8 +186,6 @@ This job should:
 - Insert a tFilterRow
 4. Sort the invoices
 - Insert a tSortRows
-5. Create a case in Salesforce with the invoice data included
-- Create a Salesforce connection in the metadata part
 
 ### Create the simpliest Rest service
 1. Insert a tRESTRequest
