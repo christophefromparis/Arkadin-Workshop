@@ -168,9 +168,14 @@ The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_
 
 ### Create a job
 We're going to create a job with several components in order to glimpse the possibilities of Talend.
+
+
 This job should:
+![alt text](./images/BM.PNG)
+
+How to create this job:
 1. take a XML file with invoice data and billing account,
-- Import the XML file in the metadata part.
+- Create the XML file in the metadata part. (input XML - [invoices.xml](./src/invoices.xml))
 - Create a new job
 - Insert a tFileInputXML, retrieve the description from the metadata
 2. Retrieve the subsidiaries given the billing account
