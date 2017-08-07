@@ -1,0 +1,609 @@
+swagger: '2.0'
+info:
+  description: This is the events API specification and documentation.
+  version: '0.4.4'
+  title: Events API
+  contact:
+    email: c.cosnefroy@arkadin.com
+host: api-dev.arkadin.com
+basePath: /
+schemes:
+  - https
+paths:
+  '/events/version':
+    get:
+      summary: Return the version
+      tags: 
+        - default
+      operationId: getVersion
+      description: |
+        Return the Events API version
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: The current Events API version
+          schema:
+              $ref: '#/definitions/VersionModel'
+  '/events/status':
+    get:
+      summary: Return the status
+      tags: 
+        - default
+      operationId: getStatus
+      description: |
+        Return the Events API status
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: The current Events API status
+          schema:
+              $ref: '#/definitions/StatusModel'
+  '/events':
+    get:
+      summary: Returns the events
+      tags: 
+        - event
+      operationId: getAllEvents
+      description: |
+        Returns all the events and their details
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in
+            xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: The events list
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/EventListModel'
+        '404':
+          description: Events not found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '405':
+          description: API Key not present
+          schema:
+            $ref: '#/definitions/ErrorModel'
+    post:
+      summary: Creates an event
+      tags: 
+        - event
+      operationId: createEvent
+      description: Creates a request in order to organise an event
+      consumes:
+        - application/json
+        - application/xml
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: body
+          name: createEvent
+          description: Event to create
+          schema:
+            $ref: '#/definitions/Event'
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in
+            xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: The unique event identifier of the created event
+          schema:
+            $ref: '#/definitions/EventIdModel'
+        '400':
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '405':
+          description: API Key not present
+          schema:
+            $ref: '#/definitions/ErrorModel'
+  '/events/{eventId}':
+    get:
+      summary: Retrieves an event
+      operationId: getEvent
+      tags: 
+        - event
+      description: |
+        Returns an event and its details given an id
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: path
+          name: eventId
+          description: The id corresponding to the event
+          required: true
+          type: string
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in
+            xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Details of the event
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Event'
+        '400':
+          description: Bad input parameter
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '404':
+          description: Events not found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '405':
+          description: API Key not present
+          schema:
+            $ref: '#/definitions/ErrorModel'
+    put:
+      summary: Modifies an event
+      tags: 
+        - event
+      operationId: modifyEvent
+      description: Modifies an event
+      consumes:
+        - application/json
+        - application/xml
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: body
+          name: inventoryItem
+          description: Inventory item to add
+          schema:
+            $ref: '#/definitions/Event'
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in
+            xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: item modified
+        '400':
+          description: invalid request
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '404':
+          description: events not found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '405':
+          description: API Key not present
+          schema:
+            $ref: '#/definitions/ErrorModel'
+    delete:
+      summary: Deletes an event
+      tags: 
+        - event
+      operationId: deleteEvent
+      description: Deletes an event
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: path
+          name: eventId
+          description: Event id to delete
+          required: true
+          type: string
+        - in: header
+          name: Accept
+          description: >-
+            If Accept = 'application/xml' or 'text/xml', the response will be in
+            xml otherwise in json
+          required: false
+          type: string
+      responses:
+        '200':
+          description: event deleted
+          schema:
+            $ref: '#/definitions/MessageModel'
+        '400':
+          description: invalid request
+          schema:
+            $ref: '#/definitions/ErrorModel'
+securityDefinitions:
+  UserSecurity:
+    type: apiKey
+    in: query
+    name: apikey
+security:
+  - UserSecurity: []
+definitions:
+  Countries:
+    type: string
+    enum: &COUNTRIES
+        - Australia
+        - Belgium (België/Belgique/Belgien)
+        - Canada
+        - China (中国)
+        - Czech Republic (Česko)
+        - France
+        - Germany (Deutschland)
+        - Ireland (Republic of) (Éire)
+        - Italy (Italia)
+        - Japan (日本)
+        - Luxembourg (Grand-Duché de)
+        - Malaysia
+        - The Netherlands (Nederland)
+        - New Zealand
+        - Norway (Norge)
+        - Poland (Polska)
+        - Portugal
+        - Singapore (Republic of)
+        - Spain (España)
+        - Sweden (Sverige)
+        - Switzerland (Schweiz/Suisse/Svizzera)
+        - Turkey (Republic of) (Türkiye)
+        - United Kingdom
+        - United States
+        - Denmark (Danmark)
+        - Finland (Suomi)
+        - Iceland (Ísland)
+        - India (भारत)
+        - Peru (Republic of) (Perú)
+        - South Africa
+        - South Korea (Republic of Korea) (대한민국)
+        - United Arab Emirates (دولة الإمارات العربية المتحدة)
+        - Taiwan (Republic of China) (中華民國)
+        - Austria (Österreich)
+        - Bahrain (‏البحرين)
+        - Hong Kong (香港)
+        - Colombia (Republic of)
+        - Egypt (مَصر)
+        - Greece (Ελλάδα)
+        - Hungary (Magyarorszag)
+        - Indonesia (Republic of)
+        - Israel (מְדִינַת יִשְׂרָאֵל)
+        - Kuwait (دولة الكويت‎)
+        - Mexico (México)
+        - Oman (Sultanate of) (عمان)
+        - Russian Federation (Россия)
+        - Saudi Arabia (Kingdom of) (المملكة العربية السعودية)
+        - Thailand (Kingdom of) (ประเทศไทย)
+        - Brazil (Brasil)
+        - Jordan (الأردن)
+        - Qatar
+        - Kenya
+        - Nigeria
+        - Mauritius
+        - Slovakia
+        - Slovenia (Slovenija)
+        - Ukraine (Україна)
+        - Estonia (Eesti)
+        - Romania
+        - Latvia
+        - Lithuania
+        - Croatia (Hrvatska)
+        - Cyprus (Κύπρος/Kıbrıs)
+        - Chile
+        - Vietnam (Việt Nam)
+  Languages:
+    type: string
+    enum: &LANGUAGES
+        - Afrikaans
+        - Arabic (العربية)
+        - Simplified Chinese (简化字)
+        - Czech (Český)
+        - Danish (Dansk)
+        - Dutch (Nederlands)
+        - English
+        - Finnish (Suomi)
+        - French
+        - German (Deutsch)
+        - Greek (Ελληνικά)
+        - Hebrew (עִבְרִית)
+        - Hindi (हिन्दी)
+        - Hungarian (Magyar)
+        - Italian (Italiano)
+        - Japanese (日本語)
+        - Korean (한국어를 지원합니다)
+        - Malay (Bahasa Melayu)
+        - Mandarin (中國的語言)
+        - Norwegian (Norsk)
+        - Polish (Polski)
+        - Portuguese (Português)
+        - Russian (Pу́сский)
+        - Spanish (Español)
+        - Swedish (Svenska)
+        - Thai (ภาษาไทย)
+        - Turkish (Türkçe)
+        - Cantonese (廣州話)
+        - Traditional Chinese (正體字/繁體字)
+        - Portuguese (Brasil)
+        - American English
+        - Slovenian (Slovenski)
+        - Spanish (Latin America)
+  Event:
+    type: object
+    required:
+      - eventTitle
+      - eventDate
+      - eventType
+      - eventExpectedNumberOfParticipants
+      - eventExpectedDuration
+      - eventPrimaryCountry
+      - eventMainLanguage
+      - eventOrganizerTitle
+      - eventOrganizerFirstName
+      - eventOrganizerLastName
+      - eventOrganizerEmail
+      - eventOrganizerCommunicationLanguage
+      - eventOrganizerDeskPhone
+      - eventAudioEnvironment
+      - eventDialOut
+      - eventSpeakerFirstName
+      - eventSpeakerLastName
+      - eventSpeakerPhoneNumber
+      - eventSpeakerEmail
+    properties:
+      eventTitle:
+        type: string
+        example: 'Q1 17 Earnings presentation'
+      eventDate:
+        type: string
+        format: date-time
+        example: '2017-10-30T04:30:00 Z+02:00'
+      eventType:
+        type: string
+        example: Webcast
+        default: Audio
+        enum:
+          - Audio
+          - Web
+          - Webcast
+          - Video
+      eventStatus:
+        type: string
+        example: Ordered
+        default: Provisional
+        enum:
+          - Provisional
+          - Ordered
+      eventExpectedNumberOfParticipants:
+        type: integer
+        format: int32
+        example: 500
+      eventExpectedDuration:
+        description: Event expected durantion (in minutes)
+        type: integer
+        format: int32
+        example: 90
+      eventCustomerName:
+        type: string
+        example: Arkadin SAS
+      eventCustomerReference:
+        type: string
+        example: 'DRF 2017-45'
+      eventPrimaryCountry:
+        type: string
+        example: France
+        enum: *COUNTRIES
+      eventMainLanguage:
+        type: string
+        example: French
+        enum: *LANGUAGES
+      eventOrganizerTitle:
+        type: string
+        example: Mr.
+        enum:
+          - Mr.
+          - Mrs.
+      eventOrganizerFirstName:
+        type: string
+        example: John
+      eventOrganizerLastName:
+        type: string
+        example: Doe
+      eventOrganizerJobTitle:
+        type: string
+        example: Director
+      eventOrganizerFunction:
+        type: string
+        example: Consultant
+      eventOrganizerDepartement:
+        type: string
+        example: Communication
+      eventOrganizerAddress:
+        type: string
+        example: '33 avenue des Saules, 75008 PARIS'
+      eventOrganizerEmail:
+        type: string
+        format: email
+        example: john.doe@rebault.com
+      eventOrganizerCommunicationLanguage:
+        type: string
+        example: French
+        enum: &LANGUAGES
+      eventOrganizerDeskPhone:
+        type: string
+        format: phone
+        example: '33145289337'
+      eventOrganizerCellPhone:
+        type: string
+        format: phone
+        example: '33645289337'
+      eventAudioEnvironment:
+        type: string
+        example: Auditorium
+        enum:
+          - Auditorium
+          - Meeting / Conference room
+          - Telephone
+          - I don't know
+      eventDialOut:
+        type: boolean
+        example: 1
+        default: 0
+      eventSpeakerFirstName:
+        type: string
+        example: Oliver
+      eventSpeakerLastName:
+        type: string
+        example: Smith
+      eventSpeakerCompany:
+        type: string
+        example: Tesla corp
+      eventSpeakerPhoneNumber:
+        type: string
+        format: phone
+        example: '45285529363'
+      eventSpeakerEmail:
+        type: string
+        format: email
+        example: oliver.smith@tesla.com
+      eventTopic:
+        type: string
+        example: Crisis communication
+        default: I don't know
+        enum:
+          - Crisis communication
+          - Education
+          - Hearing / Deposition
+          - Internal Communication
+          - Investor Relations
+          - Lead Generation
+          - Press Conference
+          - Product Launch / Demo
+          - Other
+          - I don't know
+      eventAddListenOnlyDials:
+        description: >-
+          Tells Conference provider if a portion of the dials needs to be listen
+          only; further description put in notes field
+        type: boolean
+      eventQASession:
+        type: boolean
+        default: 1
+      eventRecording:
+        type: boolean
+        default: 0
+      eventPlayback:
+        type: boolean
+        default: 0
+      eventCommsLine:
+        type: boolean
+        default: 0
+      eventTollFreeDials:
+        type: boolean
+        default: 0
+      eventInternationalDials:
+        type: boolean
+        default: 0
+      eventRollCall:
+        type: boolean
+        default: 0
+      eventRollCallMethod:
+        type: string
+        enum:
+          - 'Roll Call without Intercept'
+          - 'Roll Call with Intercept'
+          - 'Roll Call with Intercept on Q&A only'
+          - 'Roll Call with Intercept until Start'
+        default: 'Roll Call with Intercept'
+      eventWelcomeMessage:
+        type: string
+      eventIntroduction:
+        type: string
+      eventQAStart:
+        type: string
+      eventConclusion:
+        type: string
+      eventSpecialInstructions:
+        type: string
+      eventInternalNotes:
+        type: string
+  EventIdModel:
+    type: object
+    properties:
+      eventId:
+        type: string
+        format: uid
+        example: EV201745222
+  EventListModel:
+    type: object
+    properties:
+      eventId:
+        type: string
+        format: uid
+        example: EV201745222
+      eventTitle:
+        type: string
+        example: 'Q1 17 Earnings presentation'
+      eventStatus:
+        type: string
+        example: Ordered
+        default: Provisional
+        enum:
+          - Provisional
+          - Ordered
+  MessageModel:
+    type: object
+    properties:
+      message:
+        type: string
+        example: Event EV2016833 has been deleted
+  VersionModel:
+    type: object
+    properties:
+      version:
+        type: string
+        example: 'Arkadin Events API v0.4.1'
+  StatusModel:
+    type: object
+    properties:
+      version:
+        type: string
+        example: 'Operational'
+  ErrorModel:
+    type: object
+    properties:
+      code:
+        type: integer
+        example: 404
+      message:
+        type: string
+        example: Events not found
+      moreInfo:
+        type: string
+        example: 'https://api-dev.arkadin.com/doc/errors/404'
