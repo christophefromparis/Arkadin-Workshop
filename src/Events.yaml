@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
-  description: This is the events API specification and documentation.
-  version: '0.4.4'
+  description: This is the Events API specification and documentation.
+  version: '0.4.5'
   title: Events API
   contact:
     email: c.cosnefroy@arkadin.com
@@ -9,6 +9,8 @@ host: api-dev.arkadin.com
 basePath: /
 schemes:
   - https
+security:
+  - apiKeyQuery: []
 paths:
   '/events/version':
     get:
@@ -16,8 +18,7 @@ paths:
       tags: 
         - default
       operationId: getVersion
-      description: |
-        Return the Events API version
+      description: 'Return the current Events API version.'
       produces:
         - application/json
         - application/xml
@@ -32,7 +33,7 @@ paths:
         '200':
           description: The current Events API version
           schema:
-              $ref: '#/definitions/VersionModel'
+            $ref: '#/definitions/VersionModel'
   '/events/status':
     get:
       summary: Return the status
@@ -63,7 +64,7 @@ paths:
         - event
       operationId: getAllEvents
       description: |
-        Returns all the events and their details
+        Returns all the events and their details given the API key. So a customer only views its events.
       produces:
         - application/json
         - application/xml
@@ -95,7 +96,7 @@ paths:
       tags: 
         - event
       operationId: createEvent
-      description: Creates a request in order to organise an event
+      description: Creates a request in order to organise an event.
       consumes:
         - application/json
         - application/xml
@@ -103,8 +104,8 @@ paths:
         - application/json
         - application/xml
       parameters:
-        - in: body
-          name: createEvent
+        - in: query
+          name: event
           description: Event to create
           schema:
             $ref: '#/definitions/Event'
@@ -243,12 +244,10 @@ paths:
           schema:
             $ref: '#/definitions/ErrorModel'
 securityDefinitions:
-  UserSecurity:
+  apiKeyQuery:
     type: apiKey
-    in: query
     name: apikey
-security:
-  - UserSecurity: []
+    in: query
 definitions:
   Countries:
     type: string
@@ -588,11 +587,11 @@ definitions:
     properties:
       version:
         type: string
-        example: 'Arkadin Events API v0.4.1'
+        example: 'Arkadin Events API v0.4.4'
   StatusModel:
     type: object
     properties:
-      version:
+      status:
         type: string
         example: 'Operational'
   ErrorModel:
