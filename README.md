@@ -1,4 +1,4 @@
-# Arkadin Apigee Workshop
+# PALO IT Apigee Workshop
 
 ![alt text](./images/Arkadin.JPG)
 
