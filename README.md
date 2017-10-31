@@ -26,7 +26,7 @@ By using [Apigee](https://apigee.com/specs) or [Swagger](http://editor.swagger.i
 
 :muscle: It's time to exercise...
 Write your specification by using your favorite tool (either Apigee or Swagger or another else). The specification must describes a new operation called /subsidiaries/countryCode. This service have to return a list of subsidiaries given a country code (Use the description of others services to describe it).
-Use the [file arkadin_api-Subsidiaries-0.9-swagger.json](./src/arkadin_api-Subsidiaries-0.9-swagger.json)
+Use the [file Subsidiaries-0.9-swagger.json](./src/Subsidiaries-0.9-swagger.json)
 
 ### Create an API proxy from SOAP service (:hourglass: 15')
 
