@@ -4,8 +4,7 @@ info:
   version: '0.9'
   title: Subsidiaries
   contact:
-    email: c.cosnefroy@arkadin.com
-host: api-dev.arkadin.com
+    email: ccosnefroy@palo-it.com
 basePath: /
 schemes:
   - https
@@ -39,7 +38,7 @@ paths:
           examples:
             code: 405
             message: API Key not present
-            moreInfo: 'https://api-dev.arkadin.com/doc/apikey'
+            moreInfo: 'https://api-dev.palo-it.com/doc/apikey'
   '/subsidiaries/{subsidiaryCode}':
     get:
       summary: Returns the subsidiary given the code
@@ -73,7 +72,7 @@ paths:
           examples:
             code: 404
             message: Subsidiary not found
-            moreInfo: 'https://api-dev.arkadin.com/doc/subsidiary/todo'
+            moreInfo: 'https://api-dev.palo-it.com/doc/subsidiary/todo'
   '/subsidiaries/billingaccount/{billingAccount}':
     get:
       summary: Returns the subsidiaries given a billing account
@@ -107,7 +106,7 @@ paths:
           examples:
             code: 404
             message: Billing account not found
-            moreInfo: 'https://api-dev.arkadin.com/doc/subsidiary/todo'
+            moreInfo: 'https://api-dev.palo-it.com/doc/subsidiary/todo'
 securityDefinitions:
   UserSecurity:
     type: apiKey
@@ -132,13 +131,13 @@ definitions:
         example: FR
       name:
         type: string
-        example: Arkadin France
+        example: PALO IT France
       navisionDatabase:
         type: string
         example: NAV_FR
       navisionPrefixTable:
         type: string
-        example: ARKADIN Corporate
+        example: PALO IT Global
       currencies:
         type: array
         items:
