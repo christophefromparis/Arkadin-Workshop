@@ -63,7 +63,7 @@ Use the Rest API: https://jsonplaceholder.typicode.com/
 7. Add a apikey verification ![alt text](./images/VerifyKeyPolicy.JPG)
 In order to use the apikey, explain the publish process (developers, app, product and key).
 
-Please, show me the [video](https://vimeo.com/113342105) (and listen the beautiful music :hear_no_evil:) (:hourglass: 3')
+Please, show me the [video](https://vimeo.com/113342105) (and listen the nice music :hear_no_evil:) (:hourglass: 3')
 
 ![alt text](./images/ApigeeProduct.JPG)
 
