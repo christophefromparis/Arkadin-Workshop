@@ -39,7 +39,7 @@ Create an API proxy (SOAP service) with the WSDL URL http://www.webservicex.com/
 
 ### Create an API proxy from specification (:hourglass: 5')
 
-You can retrieve the [Arkadin specifications here](https://app.swaggerhub.com/search?query=%20arkadin)
+You can retrieve the [Specifications here](https://app.swaggerhub.com/search?query=%20arkadin)
 
 The [JSON specification for the Subsidiaries API](https://app.swaggerhub.com/apiproxy/schema/file/arkadin_api/Subsidiaries/1.0.0/swagger.json)
 
@@ -74,7 +74,7 @@ Please, show me the [video](https://vimeo.com/113342105) (and listen the beautif
 ##### Register apps
 
 :muscle: It's time to exercise...
-Ok, I'm a developer, from a partner, and you want to give me an access to your API. My email is c.cosnefroy@arkadin.com and I'm waiting your email with the information needed to use your API.
+Ok, I'm a developer, from a partner, and you want to give me an access to your API. My email is ccosnefroy@palo-it.com and I'm waiting your email with the information needed to use your API.
 So, you have to publish your API and give me the elements in order to test the API.
 
 Depending on time we can also:
