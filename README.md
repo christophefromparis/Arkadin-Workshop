@@ -1,6 +1,6 @@
 # PALO IT Apigee Workshop
 
-![alt text](./images/Arkadin.JPG)
+![alt text](./images/ApigeeWorkshop.png)
 
 ## Quick roundtable (:hourglass: 5')
 
