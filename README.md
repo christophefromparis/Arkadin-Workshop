@@ -2,8 +2,6 @@
 
 ![alt text](./images/ApigeeWorkshop.png)
 
-## Quick roundtable (:hourglass: 5')
-
 ## General presentation
 
 ### Google Apigee Edge (:hourglass: 5')
@@ -12,9 +10,9 @@
 
 ![alt text](./images/ApigeeOverview2.JPG)
 
-## Practice Apigee (:hourglass: 80')
+## Practice Apigee (:hourglass: 45')
 
-### Create your Apigee account: https://login.apigee.com/sign_up (:hourglass: 5')
+### Create your Apigee account: https://login.apigee.com/sign_up (:hourglass: 1')
 It's now or never:heavy_exclamation_mark:
 
 ### Create your API specification (:hourglass: 15')
@@ -92,14 +90,9 @@ See the version.js file
 3. Create a new target endpoint using the Node.js
 4. Add a routeRule to redirect the calls to the good endpoind (use the RouteRule snippet in [the src directory](./src))
 
-## Arkadin feedbacks (:hourglass: 15')
+## Feedbacks (:hourglass: 5')
 
 ![alt text](./images/IloveAPI.JPG)
-
-### Demonstration of the Arkadin APIs:
-1. Customers API (production from today)
-2. Subsidiaries API (production from )
-3. Events API (prototype at the moment, production on September)
 
 ### Specification
 OpenAPI and Swagger, Apigee isn't enought strong (or not enought finish, as you prefer).
@@ -126,83 +119,6 @@ Several environments :thumbsup:, easy to configure. Load balancing.
 #### Reports
 To explore in details
 
-## Questions:question: (:hourglass: 10')
-
-# Arkadin Talend Workshop
-
-![alt text](./images/TalendWorkshop.png)
-
-## General presentation
-
-### Talend Data Services Platform (:hourglass: 5')
-
-![alt text](./images/TDSPLogo.png)
-
-#### Jobs, services and routes
-
-##### Jobs
-
-![alt text](./images/job.png)
-
-##### Services
-
-![alt text](./images/service.png)
-
-##### Routes
-
-![alt text](./images/routes.png)
-
-#### Connectors
-
-### Arkadin architecture (:hourglass: 5')
-
-The [platform](https://myarkadin-my.sharepoint.com/personal/c_cosnefroy_arkadin_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments%2FArkadin-SolutionArchitecture-20170406-v0%2E1%2Epng&parent=%2Fpersonal%2Fc_cosnefroy_arkadin_com%2FDocuments)
-
-## Practice Talend Data Services Platform (:hourglass: 80')
-
-### Create a job
-We're going to create a job with several components in order to glimpse the possibilities of Talend.
-
-This job should:
-
-![alt text](./images/BM.PNG)
-
-How to create this job:
-1. take a XML file with invoice data and billing account,
-- Create the XML file in the metadata part. (input XML - [invoices.xml](./src/invoices.xml))
-- Create a new job
-- Insert a tFileInputXML, retrieve the description from the metadata
-2. Retrieve the subsidiaries given the billing account
-- Create a MS SQL Server connection in the metadata part (Microsoft SQL Server - Microsoft - workshop - frpa2devtal01.arkadin.lan - 59272 - workshop)
-- Insert a tPrejob
-- Insert a tMSSqlConnection, retrieve the description from the metadata
-- Insert a tPostjob
-- Insert a tMSSqlClose
-- Insert a tMSSqlInput to retrieve the billing account
-- Test now!
-- Insert a tMap
-3. Filter the invoices (Reject the invoices with an amount < 100)
-- Insert a tFilterRow
-4. Sort the invoices (Sort by date)
-- Insert a tSortRows
-
-![alt text](./images/FirstJob.PNG)
-
-### Create the simpliest Rest service
-1. Insert a tRESTRequest
-2. Insert a tXMLMap
-3. Insert a tRESTResponse
-
-![alt text](./images/SimpleRequest.PNG)
-
-### A service a little bit more elaborated
-
-![alt text](./images/SecondService.PNG)
-
-### And if I want to deploy my work?
-
-#### Publish, deploy and start
-
-## Questions:question: (:hourglass: 10')
+## Questions:question: (:hourglass: 5')
 
 
