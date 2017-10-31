@@ -13,9 +13,9 @@
 ## Practice Apigee (:hourglass: 45')
 
 ### Create your Apigee account: https://login.apigee.com/sign_up (:hourglass: 1')
-It's now or never:heavy_exclamation_mark:
+It's right now or never:heavy_exclamation_mark:
 
-### Create your API specification (:hourglass: 15')
+### Create your API specification (:hourglass: 10')
 ![alt text](./images/OpenAPI.JPG)
 
 The [Open API Initiative](https://www.openapis.org/). In 2015 Open API specification = Swagger 2.0 specification.
@@ -30,7 +30,7 @@ Use the [file Subsidiaries-0.9-swagger.json](./src/Subsidiaries-0.9-swagger.json
 
 We're going to retrieve the weather for your city by using the following SOAP service http://www.webservicex.com/New/Home/ServiceDetail/56
 
-Firsly, I'm going to show you :tv: how to do that and secondly it's your turn :white_check_mark:
+Firsly, I'm going to show you :tv: how to do this and secondly it's your turn :white_check_mark:
 
 :muscle: It's time to exercise...
 Create an API proxy (SOAP service) with the WSDL URL http://www.webservicex.com/globalweather.asmx?wsdl and test the API with Postman (or your favorite tool).
@@ -98,14 +98,14 @@ See the version.js file
 OpenAPI and Swagger, Apigee isn't enought strong (or not enought finish, as you prefer).
 
 ### Mock
-Used and approved by Arkadin :thumbsup:
+Used and approved by me :thumbsup:
 
 ### Development
 Easy to use
 Easy to understand
 Easy to version
 You have to know policies and how retrieve the documentation about parameters (because there're a lot of parameters)
-I have to draw up a best practices document for my succesors :blue_book:
+I have to draw up a best practices document :blue_book:
 
 ### Test
 ##### Postman, Postman and Postman :thumbsup:
